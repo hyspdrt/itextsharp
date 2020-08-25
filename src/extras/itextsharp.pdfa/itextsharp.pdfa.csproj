@@ -1,4 +1,4 @@
-﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="Current">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -11,6 +11,11 @@
     <AssemblyName>itextsharp.pdfa</AssemblyName>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>itextsharp.snk</AssemblyOriginatorKeyFile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -56,10 +61,10 @@
     <Compile Include="iTextSharp\text\pdf\intern\PdfA3Checker.cs" />
     <Compile Include="iTextSharp\text\pdf\intern\PdfAChecker.cs" />
     <Compile Include="iTextSharp\text\pdf\intern\PdfAConformanceImp.cs" />
-	<Compile Include="iTextSharp\text\pdf\intern\ZugferdChecker.cs" />
+    <Compile Include="iTextSharp\text\pdf\intern\ZugferdChecker.cs" />
     <Compile Include="iTextSharp\text\pdf\PdfAConformanceException.cs" />
     <Compile Include="iTextSharp\text\pdf\PdfAConformanceLevel.cs" />
-	<Compile Include="iTextSharp\text\pdf\PdfACopy.cs" />
+    <Compile Include="iTextSharp\text\pdf\PdfACopy.cs" />
     <Compile Include="iTextSharp\text\pdf\PdfARadioCheckField.cs" />
     <Compile Include="iTextSharp\text\pdf\PdfASmartCopy.cs" />
     <Compile Include="iTextSharp\text\pdf\PdfAStamper.cs" />

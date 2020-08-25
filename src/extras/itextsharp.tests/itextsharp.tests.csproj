@@ -1,4 +1,4 @@
-﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="Current">
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release_woDrawing|AnyCPU' ">
     <OutputPath>bin\Release_woDrawing\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
@@ -19,6 +19,11 @@
     <AssemblyName>itextsharp.tests</AssemblyName>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>itextsharp.snk</AssemblyOriginatorKeyFile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -74,12 +79,12 @@
     <Compile Include="iTextSharp\text\io\GroupedRandomAccessSourceTest.cs" />
     <Compile Include="iTextSharp\text\io\WindowRandomAccessSourceTest.cs" />
     <Compile Include="iTextSharp\text\pdf\AcroFieldsTest.cs" />
-	<Compile Include="iTextSharp\text\pdf\BarcodeMacroPDF417Test.cs" />
+    <Compile Include="iTextSharp\text\pdf\BarcodeMacroPDF417Test.cs" />
     <Compile Include="iTextSharp\text\pdf\BarcodeUnicodeTest.cs" />
     <Compile Include="iTextSharp\text\pdf\BookmarksTest.cs" />
-	<Compile Include="iTextSharp\text\pdf\CompressionTest.cs" />
+    <Compile Include="iTextSharp\text\pdf\CompressionTest.cs" />
     <Compile Include="iTextSharp\text\pdf\FreeTextFlatteningTest.cs" />
-	<Compile Include="iTextSharp\text\pdf\PdfDictionaryTest.cs" />
+    <Compile Include="iTextSharp\text\pdf\PdfDictionaryTest.cs" />
     <Compile Include="iTextSharp\text\pdf\PdfEncryptionTest.cs" />
     <Compile Include="iTextSharp\text\pdf\CMapAwareDocumentFontTest.cs" />
     <Compile Include="iTextSharp\text\pdf\cs\DeviceNColorSpaceTest.cs" />

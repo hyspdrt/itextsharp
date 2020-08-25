@@ -1,4 +1,4 @@
-﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="Current">
   <PropertyGroup>
     <ProjectType>Local</ProjectType>
     <ProductVersion>8.0.50727</ProductVersion>
@@ -27,6 +27,7 @@
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
     <SignAssembly>true</SignAssembly>
+    <OldToolsVersion>2.0</OldToolsVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <OutputPath>bin\Debug\</OutputPath>
@@ -106,11 +107,11 @@
     <Compile Include="AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
-	<Compile Include="iTextSharp\text\pdf\MemoryLimitsAwareException.cs" />
+    <Compile Include="iTextSharp\text\pdf\MemoryLimitsAwareException.cs" />
     <Compile Include="iTextSharp\text\pdf\MemoryLimitsAwareHandler.cs" />
     <Compile Include="iTextSharp\text\pdf\MemoryLimitsAwareOutputStream.cs" />
     <Compile Include="iTextSharp\text\pdf\ReaderProperties.cs" />
-	<Compile Include="KeyVersionAttribute.cs">
+    <Compile Include="KeyVersionAttribute.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="iTextSharp\text\Anchor.cs">
